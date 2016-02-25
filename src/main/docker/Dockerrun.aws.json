@@ -1,0 +1,19 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "ajmalch/spring-boot-aws",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "8080"
+    }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/var/app/mydb",
+      "ContainerDirectory": "/etc/mysql"
+    }
+  ],
+  "Logging": "/var/log/nginx"
+}
